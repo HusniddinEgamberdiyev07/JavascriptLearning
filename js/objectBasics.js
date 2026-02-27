@@ -96,7 +96,7 @@ let user5 = {
   name: "Husniddin",
 };
 
-let admin = user5; // we did not copy user5 but we took the refrence of the ,e,ory location
+let admin = user5; // we did not copy user5 but we took the refrence of the memory location
 // If I change user5 it will be changed on admin too
 user5.name = "Dunno";
 console.log(admin);
