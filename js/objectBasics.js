@@ -5,9 +5,9 @@
 // Property is key:value
 
 let user = {
-    name:"Husniddin",
-    surname:"Egamberdiyev",
-    age:18,
+  name: "Husniddin",
+  surname: "Egamberdiyev",
+  age: 18,
 };
 
 // You can create empty object using two ways:
@@ -50,12 +50,12 @@ console.log(user);
 
 // We can put variables inside []
 
-let fruit = "apple"
-let weight = "weight"
+let fruit = "apple";
+let weight = "weight";
 
 let bag = {
-    [fruit]:2
-}
+  [fruit]: 2,
+};
 
 console.log(bag);
 
@@ -66,54 +66,54 @@ console.log(bag);
 let name = "Husniddin";
 
 let user3 = {
-    name:name
-}
+  name: name,
+};
 
 console.log(user3);
 
 let user4 = {
-    name
-}
+  name,
+};
 
 console.log(user4);
 
 // no limit to name keys
 
 let no_limit = {
-    let:"variable",
-    for:"loop"
-}
+  let: "variable",
+  for: "loop",
+};
 console.log(no_limit);
 
-console.log("name" in user);        // user has name propery
-console.log("nonsense" in user);    // false
+console.log("name" in user); // user has name propery
+console.log("nonsense" in user); // false
 
-for (key in user){
-    console.log(user[key]);
+for (key in user) {
+  console.log(user[key]);
 }
 
 let user5 = {
-    name:"Husniddin"
-}
+  name: "Husniddin",
+};
 
-let admin = user5   // we did not copy user5 but we took the refrence of the ,e,ory location
+let admin = user5; // we did not copy user5 but we took the refrence of the ,e,ory location
 // If I change user5 it will be changed on admin too
-user5.name = "Dunno"
+user5.name = "Dunno";
 console.log(admin);
 
 // Checking they have the same refrence
-console.log(admin === user5);   // true
+console.log(admin === user5); // true
 
 let obj1 = {};
 let obj2 = {};
 
-console.log(obj1 === obj2);     // false
+console.log(obj1 === obj2); // false
 
 // cloning or merging objects
 
 let obj3 = {
-    name:"chair"
-}
+  name: "chair",
+};
 
 let obj4 = Object.assign({}, obj3);
 console.log(obj3 === obj4);
@@ -122,10 +122,10 @@ console.log(obj4);
 // Nested cloning
 
 let obj_nested = {
-    user:{
-        name:"Husniddin"
-    }
-}
+  user: {
+    name: "Husniddin",
+  },
+};
 
 let cloned_nested = structuredClone(obj_nested);
 cloned_nested.user.name = "dunno";

@@ -1,4 +1,4 @@
-let user  = {};
+let user = {};
 
 // console.log(user.address.street);   // error
 
@@ -18,23 +18,23 @@ console.log(user.address ? user.address.street : undefined);
 console.log(user?.address?.street);
 
 let user2 = {
-    address:"somewhere"
-}
+  address: "somewhere",
+};
 
 console.log(user2?.address);
 console.log(user2?.address?.street);
 
 let userAdmin = {
-    name:"Husniddin",
-    admin(){
-        console.log("I am an admin");
-    }
-}
+  name: "Husniddin",
+  admin() {
+    console.log("I am an admin");
+  },
+};
 
-let userGuest = {}
+let userGuest = {};
 
-userAdmin.admin?.()
-userGuest.admin?.()
+userAdmin.admin?.();
+userGuest.admin?.();
 
 let key = "name";
 
